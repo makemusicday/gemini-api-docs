@@ -20,7 +20,7 @@ import sys
 
 project = 'Gemini API'
 author = 'Make Music Alliance'
-copyright = '2018, {}'.format(author)
+copyright = '2020, {}'.format(author)
 
 # The short X.Y version
 version = '2021.0'
