@@ -1,5 +1,5 @@
-General API Information
-=======================
+General API Notes
+=================
 
 Each city has a unique subdomain associated to them. All API endpoints work on the specific city
 that the subdomain belongs to. Most requests need to be sent to the appropriate city's subdomain.
