@@ -1,18 +1,17 @@
 Authentication
 ==============
 
-As stated on the first page of the documentation, authentication is handled via OAuth2_
-mechanisms, specifically, the password grant flow. Once you have requested and obtained a
-client ID and secret, you will be able to use those to exchange a user's credentials for a
-bearer token. All other API functionality that is protected by authentication requires that
-a bearer token be provided.
+The Gemini API uses OAuth2_ for client authentication and as such you will need to request client
+credentials prior to being able to interact with most facets of the API. It is currently limited
+to the password grant flow.
+
+Once you have requested and obtained a client ID and secret, you will be able to use those to
+exchange a user's credentials for a bearer token. All API functionality that is protected by
+authentication requires that a valid bearer token be provided.
 
 There are many libraries and frameworks that implement the OAuth 2 specification and will be
 compatible with the API's implementation. You are, of course, more than welcome to interact
 with the API via your own custom built OAuth 2 client library.
-
-The included examples are basic examples using ``python``. It is highly recommended that you
-use environment variables to set secret (and non-static) values in your code.
 
 
 Creating a user
