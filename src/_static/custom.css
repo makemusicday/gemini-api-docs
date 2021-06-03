@@ -26,9 +26,6 @@ BODY,
     background-color: rgb(250, 244, 229) !important;
 }
 
-.wy-side-nav-search A,
-.icon,
-.icon-home,
 .literal,
 .wy-nav-content .caption,
 .document .section H1,
@@ -46,6 +43,9 @@ BODY,
     visibility: hidden;
 }
 
+.wy-side-nav-search A,
+.icon,
+.icon-home,
 .wy-nav-content A {
     color: #009faf !important;
 }
