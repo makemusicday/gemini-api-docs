@@ -20,7 +20,7 @@ Every city's site exposes a list of cities configured in the system. However, if
 
   resp = requests.get(cities_url)
 
-  print(json.dumps(resp, indent=True))
+  print(json.dumps(resp.json(), indent=True, indent=4))
 
 
 The response provided by the system will be variable in length, depending on how many cities are configured in this particular Gemini_ installation, but it should look something like this:
@@ -47,7 +47,7 @@ Continuing on the previous example, if you have a hostname, but don't know what 
 
   resp = requests.get(city_info_url)
 
-  print(json.dumps(resp, indent=True))
+  print(json.dumps(resp.json(), indent=True, indent=4))
 
 
 The response should look something like this:

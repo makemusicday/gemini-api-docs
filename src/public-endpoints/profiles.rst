@@ -13,7 +13,7 @@ There are 2 endpoints that return a list of artist or venue names, for use in dr
 
     resp = requests.get(artist_list_url)
 
-    print(json.dumps(resp.content, sort_keys=True))
+    print(json.dumps(resp.json(), sort_keys=True, indent=4))
 
 
 Which will output the following:
@@ -45,7 +45,7 @@ Similarly, you can do the same for venues:
 
     resp = requests.get(venue_list_url)
 
-    print(json.dumps(resp.content, sort_keys=True))
+    print(json.dumps(resp.json(), sort_keys=True, indent=4))
 
 
 Which will output the following:

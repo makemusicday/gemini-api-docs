@@ -47,7 +47,7 @@ Creating a user
       json=create_user_payload
   )
 
-  print(json.dumps(resp, indent=True))
+  print(json.dumps(resp.json(), indent=True, indent=4))
 
 
 After reviewing this code, you might be wondering what the valid scopes are. There are 5 possible scopes:
@@ -100,7 +100,7 @@ allow for better integration with various pre-existing OAuth2 clients.
       json=login_user_payload
   )
 
-  print(json.dumps(resp, indent=True))
+  print(json.dumps(resp.json(), indent=True, indent=4))
 
 
 Once again, a successful response will have the ``201`` status code, not because you are creating

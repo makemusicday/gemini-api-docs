@@ -14,7 +14,7 @@ Retrieving a list of confirmed events:
 
     resp = requests.get(events_url)
 
-    print(json.dumps(resp.content, sort_keys=True))
+    print(json.dumps(resp.json(), sort_keys=True, indent=4))
 
 
 And the response will look similar to this:
@@ -38,7 +38,7 @@ all available streams.
 
     resp = requests.get(streams_url)
 
-    print(json.dumps(resp.content, sort_keys=True))
+    print(json.dumps(resp.json(), sort_keys=True, indent=4))
 
 
 
