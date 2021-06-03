@@ -41,5 +41,5 @@ but you are welcome to use whatever programming language that you wish to commun
    contributing
    glossary
    general
-   public-endpoints
+   public-endpoints/index
    authentication

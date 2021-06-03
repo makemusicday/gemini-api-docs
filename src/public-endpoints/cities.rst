@@ -1,7 +1,5 @@
-Public Endpoints
-================
-
-Since Gemini_ is first and foremost facilitating a public festival, it is only natural that there would be a certain amount of event information that is freely available to the public. As such, there are several endpoints that do not require authentication to use. There are rate limits in effect to prevent abuse of these endpoints, but aside from that, there are no restrictions other than reasonable use.
+Cities
+======
 
 
 Retrieving the available cities
@@ -27,7 +25,7 @@ Every city's site exposes a list of cities configured in the system. However, if
 
 The response provided by the system will be variable in length, depending on how many cities are configured in this particular Gemini_ installation, but it should look something like this:
 
-.. include:: _includes/responses/cities/list.rst
+.. include:: ../_includes/responses/cities/list.rst
 
 As you can see, there are 2 cities, with a base amount of information about each. You should note that the ``base_url`` key contains the hostname to use when interacting with each city. The various other keys returned are somewhat self-explanatory.
 
@@ -54,7 +52,7 @@ Continuing on the previous example, if you have a hostname, but don't know what 
 
 The response should look something like this:
 
-.. include:: _includes/responses/cities/current.rst
+.. include:: ../_includes/responses/cities/current.rst
 
 
 .. _Gemini: https://github.com/makemusicday/gemini
