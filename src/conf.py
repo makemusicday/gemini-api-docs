@@ -97,6 +97,10 @@ html_static_path = ['_static']
 #
 # html_sidebars = {}
 
+html_logo = '_static/default.png'
+
+def setup(app):
+    app.add_css_file('custom.css')
 
 # -- Options for HTMLHelp output ---------------------------------------------
 

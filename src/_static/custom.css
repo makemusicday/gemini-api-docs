@@ -1,0 +1,69 @@
+
+BODY,
+.document .section,
+.document .section H1,
+.document .section H2,
+.document .section H3,
+.document .section H4,
+.document .section H5,
+.document .section H6,
+.caption-text
+ {
+    font-family: Helvetica Neue, Helvetica, Open Sans, sans-serif !important;
+}
+
+.wy-nav-content {
+    max-width: 1000px;
+}
+
+.wy-nav-content-wrap {
+    background-color: #fcfcfc !important;
+}
+
+.wy-side-nav-search,
+.highlight,
+.literal {
+    background-color: rgb(250, 244, 229) !important;
+}
+
+.wy-side-nav-search A,
+.icon,
+.icon-home,
+.literal,
+.wy-nav-content .caption,
+.document .section H1,
+.document .section H2,
+.document .section H3,
+.document .section H4,
+.document .section H5,
+.document .section H6
+{
+    color: #da5616 !important;
+}
+
+.version {
+    display: none;
+    visibility: hidden;
+}
+
+.wy-nav-content A {
+    color: #009faf !important;
+}
+
+.wy-nav-side {
+    background-color: rgb(112, 112, 112);
+    color: #ffffff !important;
+}
+
+.wy-nav-side .caption {
+    color: rgb(250, 244, 229) !important;
+}
+
+.admonition {
+    background-color: #99b0b2 !important;
+    color: #fcfcfc !important;
+}
+
+.admonition-title {
+    background-color: #009faf !important;
+}
