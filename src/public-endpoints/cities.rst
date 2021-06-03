@@ -16,7 +16,7 @@ Every city's site exposes a list of cities configured in the system. However, if
   # GEMINI_HOST should be something like: "https://<city>.makemusicday.org"
   base_host = os.environ['GEMINI_HOST']
 
-  cities_url = f"{base_host}/api/cities"
+  cities_url = f'{base_host}/api/cities'
 
   resp = requests.get(cities_url)
 
@@ -43,7 +43,7 @@ Continuing on the previous example, if you have a hostname, but don't know what 
 
   base_host = 'https://nf.makemusicday.org'
 
-  city_info_url = '/api/city/current'
+  city_info_url = f'{base_host}/api/city/current'
 
   resp = requests.get(city_info_url)
 
