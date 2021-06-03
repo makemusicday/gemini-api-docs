@@ -1,10 +1,10 @@
 General API Notes
 =================
 
-Each city has a unique subdomain associated to them. All API endpoints work on the specific city
-that the subdomain belongs to. Most requests need to be sent to the appropriate city's subdomain.
-There are only a handful of API endpoints that are available with a global scope. The request are
-restricted to their appropriate city.
+Each city has a unique subdomain associated to them. All API endpoints will work on any given city
+that the subdomain belongs to. Most requests need to be sent to the appropriate city's subdomain
+for the API to associate newly created or updated data with the correct city. However, there are
+a handful of API endpoints that are available with a global scope that crosses the city boundaries.
 
 Requests must use various different methods (``GET``, ``POST``, ``PUT``, ``PATCH``, ``DELETE``)
 to accomplish the appropriate actions. All requests (other than ``GET``) should be sending a
