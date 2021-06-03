@@ -11,8 +11,10 @@ to accomplish the appropriate actions. All requests (other than ``GET``) should 
 content-type of ``application/json``. The sole exception to this is the image upload endpoints
 for the city logo and the artist avatars, which take ``multipart/form-data``.
 
-Responses return appropriate HTTP status codes to indicate success or failure, along with an error
-message payload indicating what caused the error, if possible, or the data requested on success.
+Responses return appropriate HTTP status codes to indicate success (``200-299``) or failure
+(``400-599``), along with an error message payload indicating what caused the error, if possible,
+or the data requested on success. Additionally, there are several instances where a redirect
+status code (``300-399``) will be returned with the appropriate URL to redirect to.
 
 .. note::
   There are a few endpoints that respond with ``204 No Content`` and have no response payload upon
@@ -69,6 +71,25 @@ override this default, having a custom number of records returned per page, by p
 ``?per_page=<int>`` to any of the endpoints that support pagination. There is also a max
 number of records returned, which is also set in the application's configuration and is
 currently set to ``1000``.
+
+
+Object Actions
+--------------
+
+In almost every response from the API, there is a ``_links`` key provided for each object with
+actions that are available related to the object, the URL to hit and the HTTP method to use.
+For example, in the following payload returned from logging in a user, there are a handful of
+actions that are returned:
+
+.. include:: _includes/responses/auth/login.rst
+
+There are a mix of operations there, from creating a new artist profile
+(``user._links.new-artist``) to deleting the user account (``user._links.delete``). While
+interacting with the system, you will likely notice that within a single API response,
+there could be some objects that have every possible action and other objects that have
+only 1 or 2 actions, even when of the same type of object. This is simply due to user
+permissions. If an action is not listed in the object's ``_links``, it is likely because
+the current user does not have permission to complete the action for that object.
 
 
 .. _Gemini: https://github.com/makemusicday/gemini
