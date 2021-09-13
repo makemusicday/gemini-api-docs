@@ -22,6 +22,8 @@ The following areas are where help is currently needed:
 
 - Filling out the test suite for the Python API to get near total coverage
 
+- Various bug fixes and new features
+
 
 Contributors
 ------------
@@ -58,7 +60,7 @@ Documentation
 -------------
 
 You do *not* need to create a virtual environment with all of the Gemini dependencies
-to update this documentation. Install the requirements listed in the
+to update this documentation. It is sufficient to install the requirements listed in the
 ``<docs-repo>/requirements-docs.txt`` file, and make your documentation changes. To preview
 the documentation, run::
 
