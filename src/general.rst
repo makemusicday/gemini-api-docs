@@ -18,7 +18,8 @@ status code (``300-399``) will be returned with the appropriate URL to redirect 
 
 .. note::
   There are a few endpoints that respond with ``204 No Content`` and have no response payload upon
-  success. Specifically, those convenience endpoints that are toggling a boolean flag on a record.
+  success. Specifically, those convenience endpoints that are toggling a boolean flag on a record
+  or deleting a record.
 
 
 Automatic Notifications
