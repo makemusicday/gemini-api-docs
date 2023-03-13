@@ -55,6 +55,8 @@ The response should look something like this:
 .. include:: ../_includes/responses/cities/current.rst
 
 
+.. _Available Festivals:
+
 Available Festivals
 -------------------
 

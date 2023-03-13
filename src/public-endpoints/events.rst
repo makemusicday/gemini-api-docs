@@ -45,3 +45,16 @@ all available streams.
 And the response will look similar to this:
 
 .. include:: ../_includes/responses/events/streams.rst
+
+
+Previous festivals' events
+--------------------------
+
+To retrieve events from a previous festival, and after having queried for the list of festivals (see :ref:`Available Festivals`) from the city, you can use the festival specific URL as you would do with the regular events endpoints. Thus:
+
+.. code-block:: python
+
+    streams_url = f'{base_url}/api/cities/events/{festival_id}/simple'
+
+
+The response will be the same format as shown above.
