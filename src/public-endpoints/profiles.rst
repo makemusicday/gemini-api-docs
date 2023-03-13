@@ -95,7 +95,7 @@ Or for a venue's events:
     import json
     import requests
 
-    # Set the artist id appropriately for the artist you wish to query for
+    # Set the venue id appropriately for the venue you wish to query for
     venue_id = 'd8ff9bd9-8773-40a5-8b61-1d8725a59158'
     base_url = 'https://nf.makemusicday.org'
     events_url = f'{base_url}/api/venues/{venue_id}/events'

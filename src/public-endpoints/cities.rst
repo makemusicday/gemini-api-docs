@@ -55,4 +55,26 @@ The response should look something like this:
 .. include:: ../_includes/responses/cities/current.rst
 
 
+Available Festivals
+-------------------
+
+It is possible that the current city has had mutliple festivals, and occasionally, we'd like to review past events. The following endpoint allows retrieval of the various historical festivals:
+
+.. code-block:: python
+
+  import json
+  import os
+  import requests
+
+  base_host = 'https://nf.makemusicday.org'
+
+  city_info_url = f'{base_host}/api/city/current/festivals'
+
+  resp = requests.get(city_info_url)
+
+  print(json.dumps(resp.json(), indent=True, indent=4))
+
+.. include:: ../_includes/responses/cities/festivals.rst
+
+
 .. _Gemini: https://github.com/makemusicday/gemini
