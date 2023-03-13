@@ -19,7 +19,7 @@ Retrieving a list of confirmed events:
 
 And the response will look similar to this:
 
-.. include:: ../_includes/responses/events.rst
+.. include:: ../_includes/responses/events/simple.rst
 
 
 Events with Livestreams
@@ -44,4 +44,4 @@ all available streams.
 
 And the response will look similar to this:
 
-.. include:: ../_includes/responses/streams.rst
+.. include:: ../_includes/responses/events/streams.rst

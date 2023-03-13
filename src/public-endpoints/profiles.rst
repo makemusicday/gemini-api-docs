@@ -64,3 +64,44 @@ Which will output the following:
             "RadioShack Loading Dock"
         ]
     }
+
+
+Profile-specific events
+-----------------------
+
+It is also possible to retrieve the events for a specific artist or venue profile. These endpoints allow for pagination, should the need arise.
+
+.. code-block:: python
+
+    import json
+    import requests
+
+    # Set the artist id appropriately for the artist you wish to query for
+    artist_id = 'd6426661-7deb-4fbb-b24c-9693590070ab'
+    base_url = 'https://nf.makemusicday.org'
+    events_url = f'{base_url}/api/artists/{artist_id}/events'
+
+    resp = requests.get(events_url)
+
+    print(json.dumps(resp.json(), sort_keys=True, indent=4))
+
+.. include:: ../_includes/responses/events/artist.rst
+
+
+Or for a venue's events:
+
+.. code-block:: python
+
+    import json
+    import requests
+
+    # Set the artist id appropriately for the artist you wish to query for
+    venue_id = 'd8ff9bd9-8773-40a5-8b61-1d8725a59158'
+    base_url = 'https://nf.makemusicday.org'
+    events_url = f'{base_url}/api/venues/{venue_id}/events'
+
+    resp = requests.get(events_url)
+
+    print(json.dumps(resp.json(), sort_keys=True, indent=4))
+
+.. include:: ../_includes/responses/events/venue.rst
